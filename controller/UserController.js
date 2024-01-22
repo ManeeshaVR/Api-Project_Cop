@@ -23,13 +23,13 @@ const register = (req,resp) => {
                 const transporter= nodemailer.createTransport({
                     service:'gmail',
                     auth:{
-                        user:'testdevstackemail@gmail.com',
-                        pass:'jxdo sqxg szag keuu',
+                        user:'cooperativesociety759@gmail.com',
+                        pass:'kdci dupf wntn pdrx',
                     }
                 });
 
                 const mailOption={
-                    from:'testdevstackemail@gmail.com',
+                    from:'cooperativesociety759@gmail.com',
                     to:req.body.email,
                     subject:'New Account Creation',
                     text:'You have Created Your Account!'

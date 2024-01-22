@@ -32,13 +32,13 @@ const mailMember=(req,resp)=>{
     const transporter= nodemailer.createTransport({
         service:'gmail',
         auth:{
-            user:'testdevstackemail@gmail.com',
-            pass:'jxdo sqxg szag keuu',
+            user:'cooperativesociety759@gmail.com',
+            pass:'kdci dupf wntn pdrx',
         }
     });
 
     const mailOption={
-        from:'testdevstackemail@gmail.com',
+        from:'cooperativesociety759@gmail.com',
         to:req.body.email,
         subject:'Deposit Details',
         text:'Member No: '+req.body.memberNo+'\nName: '+req.body.name+"\nShares: "+req.body.shares+'\nCompulsory Deposits: '+req.body.comDeposits+'\nSpecial Deposits: '+req.body.specDeposits+'\nPension Deposits: '+req.body.penDeposits
